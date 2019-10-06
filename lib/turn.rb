@@ -28,12 +28,12 @@ def turn(board)
 
   input = gets.strip
 
-  index = input.to_i - 1
+  index = input_to_index(input)
 
   until valid_move?(board, index)
     puts "Enter valid number"
     input = gets.strip
-    index = input.to_i - 1
+    index = input_to_index(input)
   end
 
   move(board, index, "X")
