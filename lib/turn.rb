@@ -23,5 +23,23 @@ def move(board, index, token = "X")
   board[index] = token
 end
 
-def turn
+def turn(board)
+  puts "Enter move"
+
+  input = gets.trim
+
+  input -= 1
+
+  until valid_move?(board, index)
+    puts "Enter valid number"
+    input = gets.trim
+    input -= 1
+  end
+  
+  if(valid_move?(board, index))
+    
+  else
+    
+  end
+  
 end
