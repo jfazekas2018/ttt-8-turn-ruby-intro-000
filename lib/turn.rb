@@ -35,11 +35,11 @@ def turn(board)
     input = gets.trim
     input -= 1
   end
-  
+
   if(valid_move?(board, index))
-    
+
   else
-    
+
   end
-  
+
 end
