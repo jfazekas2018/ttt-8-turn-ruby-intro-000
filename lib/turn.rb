@@ -28,18 +28,14 @@ def turn(board)
 
   input = gets.trim
 
-  input -= 1
+  index = input.to_i - 1
 
   until valid_move?(board, index)
     puts "Enter valid number"
     input = gets.trim
-    input -= 1
+    index = input.to_i - 1
   end
 
-  if(valid_move?(board, index))
-
-  else
-
-  end
+  move(board, input, )
 
 end
