@@ -12,9 +12,9 @@ def valid_move?(board, index)
   end
 
   value = board[index]
-  if(value == nil){
+  if(value == nil)
     value = ""
-  }
+  end
 
   return value.trim == ""
 end
