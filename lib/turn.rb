@@ -16,7 +16,7 @@ def valid_move?(board, index)
     value = ""
   end
 
-  return value.trim == ""
+  return value.strip == ""
 end
 
 def move(board, index, token = "X")
@@ -26,13 +26,13 @@ end
 def turn(board)
   puts "Enter move"
 
-  input = gets.trim
+  input = gets.strip
 
   index = input.to_i - 1
 
   until valid_move?(board, index)
     puts "Enter valid number"
-    input = gets.trim
+    input = gets.strip
     index = input.to_i - 1
   end
 
